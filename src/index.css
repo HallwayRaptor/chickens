@@ -1,13 +1,62 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: cursive, sans-serif;
+	font-size: 2em;
+	color: #333;
+	text-align: center;
+	padding: 50px;
+	background-color: #1a1a41;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+	font-size: 3em;
+	color: #ff6347;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+	padding: 15px 30px;
+	font-size: 1.2em;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+.noButtonHidden {
+	visibility: hidden;
+}
+
+.noButtonMoved {
+	order: 1;
+}
+
+.btnYes {
+	order: 2;
+	background: limegreen;
+}
+
+.btnYes:hover {
+	background: darkgreen;
+}
+
+.btnYes:active {
+	transform: scale(0.9);
+}
+
+.btnNo {
+	background: tomato;
+}
+
+.noButtonDisabled {
+	background: gray !important;
+	cursor: not-allowed !important;
+}
+
+.buttonsHolder {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
